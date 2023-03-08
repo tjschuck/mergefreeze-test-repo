@@ -1,0 +1,11 @@
+name: Always Passes
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Command with exit code 0
+        run: echo "success"
